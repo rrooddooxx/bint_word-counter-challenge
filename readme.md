@@ -1,7 +1,5 @@
 # 🚀 Desafío Word Counter para Banco Internacional
 
----
-
 > **API Procesadora de textos!**
 > Realizado por [Sebastián Kravetz](mailto:sebastiankravetz@icloud.com) para Banco Internacional.
 
