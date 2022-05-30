@@ -1,0 +1,88 @@
+<div class="container py-3">
+  <div class="row">
+    <div class="col mt-3">
+      <h1>Api Docs:</h1>
+      <hr />
+      <h2><li>Api v1: Stable Release</li></h2>
+      <h4 class="fw-lighter">Esta versión utiliza el front-end</h4>
+      <table class="table mt-3 mb-5">
+        <thead>
+          <tr>
+            <th scope="col"><h4>Método HTTP:</h4></th>
+            <th scope="col"><h4>Endpoint:</h4></th>
+            <th scope="col"><h4>Descripción:</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each docsv1}}
+            <tr>
+              <td><span
+                  class="text-light bg-success badge"
+                >{{this.method}}</span></td>
+              <td><b>{{this.url}}</b></td>
+              <td>
+                <div class="container">
+                  <div class="row">
+                    <div class="col"><b>Descripción:
+                      </b>{{this.description}}</div>
+                  </div>
+                  <div class="row">
+                    <div class="col card my-3">
+                      <div class="card-body">
+                        <b>Detalle: </b><pre
+                          class="card-text"
+                        >{{this.detail}}</pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+
+      <h2><li>Api v2: Alpha Release</li></h2>
+      <h4 class="fw-lighter">Changelog: Esta versión agrega la paginación de los
+        resultados</h4>
+      <table class="table my-4">
+        <thead>
+          <tr>
+            <th scope="col"><h4>Método HTTP:</h4></th>
+            <th scope="col"><h4>Endpoint:</h4></th>
+            <th scope="col"><h4>Descripción:</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each docsv2}}
+            <tr>
+              <td><span
+                  class="text-light bg-success badge"
+                >{{this.method}}</span></td>
+              <td><b>{{this.url}}</b></td>
+              <td>
+                <div class="container">
+                  <div class="row">
+                    <div class="col"><b>Descripción:
+                      </b>{{this.description}}</div>
+                  </div>
+                  <div class="row">
+                    <div class="col card my-3">
+                      <div class="card-body">
+                        <b>Detalle: </b><pre
+                          class="card-text"
+                        >{{this.detail}}</pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.0-beta1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "handlebars": "^4.7.7",
+    "node-fetch": "^3.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "name": "prueba_bancointernacional_skravetz",
+  "version": "1.0.0",
+  "description": "Prueba técnica - Banco Internacional - por Sebastián Kravetz",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production node server.js",
+    "dev": "NODE_ENV=development nodemon server.js"
+  },
+  "author": "Sebastián Kravetz",
+  "license": "ISC"
+}

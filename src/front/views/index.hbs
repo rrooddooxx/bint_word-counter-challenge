@@ -1,0 +1,114 @@
+<div class="container py-3">
+  <div class="row">
+    <div class="col mt-3">
+      <h1>Ranking de palabras más recurrentes:</h1>
+      <h4>Texto: "{{data.title}}" (<a href="http://localhost:8080/generator/word-counter/text?id={{data.id}}">Original Aquí</a>)</h4>
+
+{{!-- OPCIONES DE FILTRADO --}}
+      <div class="row mt-4">
+        <div class="col-sm-3">
+          <button class="btn btn-primary" id="refetch">Filtrar vista</button>
+          </div>
+        <div class="col-sm-9">
+          <div class="row">
+
+            <div class="col">
+          <div class="input-group">
+            <label class="input-group-text" for="filtro_resultados">Filtrar número de resultados</label>
+            <select class="form-select" id="filtroresultados">
+              <option value="0">Ver Todos</option>
+              <option value="15">Ver 15 Resultados</option>
+              <option value="30">Ver 30 Resultados</option>
+              <option value="50">Ver 50 Resultados</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <label class="input-group-text" for="filtro_largo">Filtrar largo de palabra</label>
+            <select class="form-select" id="filtrolargo">
+              <option value="0">Desde 1 caracter</option>
+              <option value="1">Desde 2 caracteres</option>
+              <option value="2">Desde 3 caracteres</option>
+            </select>
+          </div>
+      </div>
+
+
+          </div>
+
+        </div>
+    </div>
+ {{!-- FIN OPCIONES DE FILTRADO --}}     
+
+{{!-- TABLA DE RESULTADOS --}}
+    <table class="table my-5">
+      <thead>
+        <tr>
+          <th scope="col"># Posición</th>
+          <th scope="col">Palabra</th>
+          <th scope="col">Ocurrencias</th>
+        </tr>
+      </thead>
+      <tbody id="rankingbody">
+        
+      </tbody>
+    </table>
+
+  </div>
+</div>
+{{!-- FIN DE RESULTADOS --}}
+
+{{!-- SCRIPTS --}}
+<script>
+// html elements
+const fetchBtn = document.getElementById("refetch")
+const apiUrl = window.location.href + "api/v1/ranking"
+const filtroResultados = document.querySelector("#filtroresultados")
+const filtroLargo = document.querySelector("#filtrolargo")
+const rankingTableBody = document.querySelector("#rankingbody")
+
+// functions
+  
+function apiFetch(limit, length) {
+  const queryUrl = `${apiUrl}?limit=${limit}&length=${length}`
+  console.log(queryUrl)
+  const query = fetch(queryUrl).then(res => res.json()).then(data => renderResults(data.data))
+}
+
+function renderResults(data) {
+  const { id, title, ranking } = data;
+  let htmlOutput = "";
+  for (let item of ranking){
+  const rowTemplate = `
+  <tr>
+    <th scope="row">${item.position}</th>
+    <td>${item.word}</td>
+    <td>${item.occurrences}</td>
+  </tr>
+  `
+  htmlOutput += rowTemplate
+  }
+  rankingTableBody.innerHTML = htmlOutput
+}
+
+function fetchButtonHandler(){
+  const limite = parseInt(filtroResultados.value)
+  const largo = parseInt(filtroLargo.value)
+  apiFetch(limite, largo)
+}
+
+// event listeners
+fetchBtn.addEventListener("click", fetchButtonHandler)
+
+// init
+let initFlag = true;
+(function (){
+  if (initFlag){
+    apiFetch(0,0)
+    initFlag = false;
+  } 
+})()
+
+</script>
+{{!-- SCRIPTS --}}

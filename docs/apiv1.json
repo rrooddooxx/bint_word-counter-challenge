@@ -1,0 +1,22 @@
+{
+  "endpoints": [
+    {
+      "method": "GET",
+      "url": "/api/v1/ranking",
+      "description": "Retorna un objeto {data} con la colección completa. Cuenta con filtros",
+      "detail": "'id': string\n'title': string\n[ranking]: array de objetos\n -- position: integer\n -- 'word': string\n -- occurrences: integer\n\nFiltros:\n\nlength=(int) | limita en base al número de caracteres de la palabra (del 0 al 2)\n0 = Palabras desde 1 o más caracteres \n1 = Palabras desde 2 o más caracteres\n2 = Palabras desde 3 o más caracteres\n\nlimit=(int) | limita el número de resultados en base al número dado\n\nEjemplo: /api/v1/ranking?length=2&limit=5"
+    },
+    {
+      "method": "GET",
+      "url": "/api/v1/ranking/length/{valor}",
+      "description": "Filtra por el largo de la palabra en base a la cantidad de caracteres. Acepta valores del 0 al 2.",
+      "detail": "0 = Palabras desde 1 o más caracteres \n1 = Palabras desde 2 o más caracteres\n2 = Palabras desde 3 o más caracteres"
+    },
+    {
+      "method": "GET",
+      "url": "/api/v1/text",
+      "description": "Consulta del texto completo entregado por la API externa (con todas las páginas concatenadas)",
+      "detail": "'id': string\n'title': string\npage: integer\ntotal_pages: integer\n'text': string"
+    }
+  ]
+}
