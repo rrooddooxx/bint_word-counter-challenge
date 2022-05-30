@@ -78,5 +78,5 @@ Allí encontrará el detalle de los endpoints, esquema de datos entregado y filt
 
 - Se respetó la lógica de aleatoreidad del texto, por lo que no se implementó ningún tipo de persistencia de datos.
 - En la versión 2 (v2) de la API se implementa una paginación de la misma con filtros opcionales, pero ya que no hay una persistencia de datos al cambiar de página el texto procesado también cambia, por lo que ésta sólo queda para fines de demostración de la implementación.
-- Al no existir un criterio preciso para considerar las palabras (articulos, sustantivos, conjunciones), se optó por implementar un filtro de longitud de palabra por cantidad de carácteres que la conforman, como se puede revidar en la documentación de la API.
+- Al no existir un criterio preciso para considerar las palabras (articulos, sustantivos, conjunciones), se optó por implementar un filtro de longitud de palabra por cantidad de carácteres que la conforman, como se detalla en la documentación de la API.
 - ¡Gracias por la oportunidad! :)
