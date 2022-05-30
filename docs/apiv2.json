@@ -4,7 +4,7 @@
       "method": "GET",
       "url": "/api/v2/ranking",
       "description": "Retorna un objeto {data} con la colección completa. Cuenta con filtros y paginación",
-      "detail": "'id': string\n'title': string\n{ranking}: objeto de colección\n -- {links}: colección de links de paginación\n  ----'prev': integer, link a página previa\n  ----'next': integer, link a siguiente página\n -- [results]: array de objetos, resultados\n  ---- position: int\n  ---- 'word':string\n  ---- 'occurrences': string\n\nFiltros:\n\nlimit=(int) | cantidad de recursos a mostrar en la página actual\n\npage=(int) | página a mostrar\n\nlength=(int) | largo de palabra en base a cantidad de caracteres (admite valores de 0 a 2)\n0 = Palabras desde 1 o más caracteres \n1 = Palabras desde 2 o más caracteres\n2 = Palabras desde 3 o más caracteres\n\n\n\nEjemplo: /api/v2/ranking?length=1&page=2&limit=5"
+      "detail": "'id': string\n'title': string\n{ranking}: objeto de colección\n -- {links}: colección de links de paginación\n  ----'prev': string, link a página previa\n  ----'next': string, link a siguiente página\n -- [results]: array de objetos, resultados\n  ---- position: int\n  ---- 'word':string\n  ---- 'occurrences': string\n\nFiltros:\n\nlimit=(int) | cantidad de recursos a mostrar en la página actual\n\npage=(int) | página a mostrar\n\nlength=(int) | largo de palabra en base a cantidad de caracteres (admite valores de 0 a 2)\n0 = Palabras desde 1 o más caracteres \n1 = Palabras desde 2 o más caracteres\n2 = Palabras desde 3 o más caracteres\n\n\n\nEjemplo: /api/v2/ranking?length=1&page=2&limit=5"
     },
     {
       "method": "GET",
