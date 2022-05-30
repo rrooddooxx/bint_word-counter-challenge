@@ -1,0 +1,25 @@
+{"level":"error","message":"/ranking -> Error!","timestamp":"2022-05-30T10:43:37.539Z"}
+{"level":"error","message":"/ranking -> Error!","timestamp":"2022-05-30T10:43:37.602Z"}
+{"level":"error","message":"/ranking -> Error!","timestamp":"2022-05-30T10:43:38.560Z"}
+{"level":"error","message":"/ranking -> Error!","timestamp":"2022-05-30T10:43:38.611Z"}
+{"level":"error","message":"/ranking -> Error!","timestamp":"2022-05-30T10:43:39.222Z"}
+{"level":"error","message":"fetch service -> Error!","timestamp":"2022-05-30T10:44:35.476Z"}
+{"level":"error","message":"fetch service -> Error!","timestamp":"2022-05-30T10:44:35.527Z"}
+{"level":"error","message":"fetch service -> Error!","timestamp":"2022-05-30T10:51:14.086Z"}
+{"level":"error","message":"text analysis (v1) service -> Error!","timestamp":"2022-05-30T10:51:14.088Z"}
+{"level":"error","message":"fetch service -> Error!","timestamp":"2022-05-30T10:51:14.145Z"}
+{"level":"error","message":"text analysis (v1) service -> Error!","timestamp":"2022-05-30T10:51:14.145Z"}
+{"level":"error","message":"rank limiter service -> OK!","timestamp":"2022-05-30T10:51:41.454Z"}
+{"level":"error","message":"rank limiter service -> OK!","timestamp":"2022-05-30T10:51:41.530Z"}
+{"level":"error","message":"rank limiter service -> OK!","timestamp":"2022-05-30T10:51:47.053Z"}
+{"level":"error","message":"/ranking -> Error!","timestamp":"2022-05-30T10:58:23.384Z"}
+{"level":"error","message":"/ranking -> Error!","timestamp":"2022-05-30T10:58:28.020Z"}
+{"level":"error","message":"/ranking -> Error!","timestamp":"2022-05-30T10:58:50.426Z"}
+{"level":"error","message":"v2/ranking -> Error!","timestamp":"2022-05-30T10:59:41.632Z"}
+{"level":"error","message":"v2/ranking -> Error!","timestamp":"2022-05-30T11:00:05.780Z"}
+{"level":"error","message":"v2/ranking -> Error!","timestamp":"2022-05-30T11:01:19.674Z"}
+{"level":"error","message":"v2/ranking -> Error!","timestamp":"2022-05-30T11:01:45.308Z"}
+{"level":"error","message":"v2/ranking -> Error!","timestamp":"2022-05-30T11:01:45.963Z"}
+{"level":"error","message":"v2/ranking -> Error!","timestamp":"2022-05-30T11:02:02.510Z"}
+{"level":"error","message":"v2/ranking -> Error!","timestamp":"2022-05-30T11:02:03.425Z"}
+{"level":"error","message":"v2/ranking -> Error!","timestamp":"2022-05-30T11:02:12.204Z"}

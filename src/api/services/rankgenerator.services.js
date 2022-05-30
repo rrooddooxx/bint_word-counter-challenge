@@ -1,3 +1,5 @@
+const logger = require("../controllers/logger.controllers.js");
+
 // ranking generator
 const wordRankingGenerator = (wordsArr = [], length = 0) => {
   try {
@@ -48,9 +50,10 @@ const wordRankingGenerator = (wordsArr = [], length = 0) => {
     } else {
       response = { error: "Largo no especificado en API" };
     }
-
+    logger.apiLogger.log("info", "rank generator service -> OK!");
     return response;
   } catch (error) {
+    logger.apiLogger.log("error", "rank generator service -> Error!");
     console.log(error);
     return {
       mensaje: "error en el generador de ranking",

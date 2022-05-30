@@ -1,3 +1,4 @@
+const logger = require("../controllers/logger.controllers.js");
 // textanalisys service for api v2
 
 const {
@@ -37,14 +38,17 @@ async function textAnalysis(data, length = 0, limit, page, url = "") {
       ranking: paginatedResults,
     };
 
+    logger.apiLogger.log("info", "text analysis (v2) service -> OK!");
     // final return to controller
     return apiResponse;
   } catch (error) {
-    if (error)
+    if (error) {
+      logger.apiLogger.log("error", "text analysis (v1) service -> Error!");
       return {
         mensaje: "Error en el módulo contador de palabras",
         error: `${error}`,
       };
+    }
   }
 }
 

@@ -1,5 +1,6 @@
 const fetch = (...args) =>
   import("node-fetch").then(({ default: fetch }) => fetch(...args));
+const logger = require("../controllers/logger.controllers.js");
 
 // functions
 async function fetchText() {
@@ -45,10 +46,11 @@ async function fetchText() {
       }
       data.text = newText;
     }
-
+    logger.apiLogger.log("info", "fetch service -> OK!");
     return data;
   } catch (error) {
     if (error) {
+      logger.apiLogger.log("error", "fetch service -> Error!");
       console.log(error);
       return {
         mensaje: "Error de fetch sobre la API",
