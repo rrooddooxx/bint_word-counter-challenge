@@ -14,6 +14,8 @@ Stack utilizado:
 ## 📦 Dependencias
 
 - Microservicio [word-counter-challenge](https://github.com/bi-lriveros/word-counter-challenge/)
+  - Java 11
+  - Gradle (wrapper incluido)
 - NodeJS 16.15.0
 
 ## 🛠 Instalación y Ejecución
