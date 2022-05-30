@@ -17,6 +17,7 @@ Stack utilizado:
   - Java 11
   - Gradle (wrapper incluido)
 - NodeJS 16.15.0
+  - Paquetes de NPM se instalarán con el primer _npm install_
 
 ## 🛠 Instalación y Ejecución
 
