@@ -45,6 +45,10 @@ npm run dev
 
 _NOTA_: Es muy importante que tanto el microservicio ejecutado en el paso 1 como el servidor ejecutado en el paso 2 corran de forma paralela, ya que se comunican entre sí.
 
+## ⚙️ Configuración:
+
+Se ha proporcionado un archivo _.env.example_ para la configuración de las variables de entorno, en este proyecto en específico para la configuración de los puertos de escucha del servidor de acuerdo al modo de ejecución (producción ó desarrollo), se sugiere renombrar este archivo a .env para que el servidor pueda utilizar las variables en él declaradas.
+
 ## 🔐 Acceso:
 
 En modo producción, la aplicación escuchará en el puerto 3000
