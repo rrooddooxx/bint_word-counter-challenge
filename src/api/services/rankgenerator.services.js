@@ -6,7 +6,8 @@ const wordRankingGenerator = (wordsArr = [], length = 0) => {
     let response = [];
     const ranking = wordsArr.reduce((acc, val) => {
       // agrego palabra al objeto acumulador
-      !Object.hasOwn(acc, val) ? (acc[val] = 1) : (acc[val] += 1);
+      const hasOwnProp = Object.prototype.hasOwnProperty;
+      !hasOwnProp.call(acc, val) ? (acc[val] = 1) : (acc[val] += 1);
       return acc;
     }, {});
 
