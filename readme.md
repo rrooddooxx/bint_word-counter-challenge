@@ -86,8 +86,6 @@ Se ha proporcionado un archivo _.env.example_ para la configuración de las vari
   http://localhost:1337
   ```
 
-  &nbsp;
-
 - Para el entorno de desarrollo Vite del frontend construido con React:
   &nbsp;
   ```
