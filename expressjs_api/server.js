@@ -2,9 +2,14 @@ require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const { engine } = require("express-handlebars");
+const cors = require("cors");
 
 // server
 const app = express();
+
+// cors
+app.options("*", cors());
+app.use(cors());
 
 // importing routes
 const apiv1Routes = require("./src/api/routes/apiv1.routes.js");
