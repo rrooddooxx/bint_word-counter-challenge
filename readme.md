@@ -25,25 +25,46 @@ Stack utilizado:
 ./gradlew bootRun
 ```
 
-2. Clonar _este_ repositorio en un entorno local y ejecutar (debe esperar a que se instalen las dependencias npm):
+2. Clonar _este_ repositorio en un entorno local. Para instalar las dependencias de la API desarrollada en NodeJS, ejecutar:
 
 ```
+cd expressjs_api/
 npm install
 ```
 
-3. Para ejecutar en modo producción:
+3. Para ejecutar la API en modo producción _(directorio "expressjs_api")_:
 
 ```
 npm start
 ```
 
-4. Para ejecutar en modo desarrollo:
+4. Para ejecutar la API en modo desarrollo _(directorio "expressjs_api")_:
 
 ```
 npm run dev
 ```
 
-_NOTA_: Es muy importante que tanto el microservicio ejecutado en el paso 1 como el servidor ejecutado en el paso 2 corran de forma paralela, ya que se comunican entre sí.
+5. Para instalar las dependencias del entorno de desarrollo del front-end con React:
+
+```
+cd ..
+cd vite_frontend/
+yarn install
+```
+
+6. Para ejecutar el entorno de desarrollo del frontend de React con Vite _(directorio "vite_frontend")_:
+
+```
+yarn dev
+```
+
+7. Para generar un _build_ de producción del frontend con React:
+
+```
+yarn build
+```
+
+_NOTA_: Es muy importante que tanto el microservicio ejecutado en el paso 1 como el servidor ejecutado en el paso 3 corran de forma paralela, ya que se comunican entre sí.
 
 ## ⚙️ Configuración:
 
@@ -51,17 +72,27 @@ Se ha proporcionado un archivo _.env.example_ para la configuración de las vari
 
 ## 🔐 Acceso:
 
-En modo producción, la aplicación escuchará en el puerto 3000
+- Para la API construida en NodeJs y el frontend construido con motor de plantillas (Handlebars):
+  &nbsp;
+  En modo producción, la aplicación escuchará en el puerto 3000
 
-```
-http://localhost:3000
-```
+  ```
+  http://localhost:3000
+  ```
 
-En modo desarrollo, la aplicación escuchará en el puerto 1337
+  En modo desarrollo, la aplicación escuchará en el puerto 1337
 
-```
-http://localhost:1337
-```
+  ```
+  http://localhost:1337
+  ```
+
+  &nbsp;
+
+- Para el entorno de desarrollo Vite del frontend construido con React:
+  &nbsp;
+  ```
+  http://localhost:3001
+  ```
 
 ## 📚 Documentación de la API:
 
