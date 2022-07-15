@@ -14,9 +14,9 @@ Stack utilizado:
 - Microservicio [word-counter-challenge](https://github.com/bi-lriveros/word-counter-challenge/)
   - Java 11
   - Gradle (wrapper incluido)
-- NodeJS 16.15.0 (carpeta "expressjs_api")
+- NodeJS 16.15.0 (carpeta ["expressjs_api"](https://github.com/wwiiddeeweb/bint_word-counter-challenge/tree/main/expressjs_api))
   - Paquetes de NPM se instalarán con el primer _npm install_
-- Vite 2.9.9 (carpeta "vite_frontend")
+- Vite 2.9.9 (carpeta ["vite_frontend"](https://github.com/wwiiddeeweb/bint_word-counter-challenge/tree/main/vite_frontend))
   - Paquetes NPM se instalarán con el primer _yarn install_
 
 ## 🛠 Instalación y Ejecución:
