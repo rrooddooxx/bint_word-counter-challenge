@@ -1,13 +1,14 @@
 # 🚀 Desafío Word Counter para Banco Internacional
 
 > **API Procesadora de textos!**
-> Realizado por [Sebastián Kravetz](mailto:sebastiankravetz@icloud.com) para Banco Internacional.
+> Realizado por [Sebastián Kravetz](mailto:sebastiankravetz@icloud.com) para Banco Internacional. Este proyecto se compone de dos microservicios: 1) Api procesadora de textos (Node.js); 2) Front-End (React.js/Vite)
 
 Stack utilizado:
 
 - NodeJS
 - Express.js
-- Handlebars.js
+- React.js (front-end v2)
+- Handlebars.js (front-end v1)
 
 ## 📦 Dependencias:
 
