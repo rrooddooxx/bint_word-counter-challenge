@@ -95,6 +95,20 @@ Se ha proporcionado un archivo _.env.example_ para la configuración de las vari
   http://localhost:3001
   ```
 
+## 🧪 Testing (Front-End)
+
+Se ha incorporado una suite de tests con JEST para los componentes, helpers y hooks del frontend con React.
+_PD: Se están incorporando nuevos tests de forma incremental_
+
+Sobre el directorio raíz, ejecutar:
+
+```
+cd vite_frontend/
+yarn test
+```
+
+Una vez dentro de la suite, para filtrar por algún componente en especial, puede pulsar la tecla [p] y filtrar por el nombre del componente.
+
 ## 📚 Documentación de la API:
 
 Una completa documentación de la API en sus versiones v1 (_stable_) y v2 (_alpha_) se encuentra en la siguiente ruta disponible al ejecutar el servidor:
@@ -111,4 +125,4 @@ Allí encontrará el detalle de los endpoints, esquema de datos entregado y filt
 - Se respetó la lógica de aleatoreidad del texto, por lo que no se implementó ningún tipo de persistencia de datos.
 - En la versión 2 (v2) de la API se implementa una paginación de la misma con filtros opcionales, pero ya que no hay una persistencia de datos al cambiar de página el texto procesado también cambia, por lo que ésta sólo queda para fines de demostración de la implementación.
 - Al no existir un criterio preciso para considerar las palabras (articulos, sustantivos, conjunciones), se optó por implementar un filtro de longitud de palabra por cantidad de carácteres que la conforman, como se detalla en la documentación de la API.
-- ¡Gracias por la oportunidad! :)
+- ¡Seguimos trabajando! 🤘

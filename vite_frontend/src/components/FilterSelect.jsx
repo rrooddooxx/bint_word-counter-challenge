@@ -1,10 +1,7 @@
 import Form from "react-bootstrap/Form";
+import PropTypes, { array } from "prop-types";
 
-export const FilterSelect = ({
-  optLabel = "Opciones: ",
-  options = [],
-  onChangeFn,
-}) => {
+const FilterSelect = ({ optLabel, options, onChangeFn }) => {
   return (
     <div className="input-group">
       <label className="input-group-text" htmlFor="inputGroupSelect01">
@@ -27,3 +24,18 @@ export const FilterSelect = ({
     </div>
   );
 };
+
+FilterSelect.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.object),
+  name: PropTypes.string,
+  val: PropTypes.number,
+  onChangeFn: PropTypes.func,
+};
+
+FilterSelect.defaultProps = {
+  optLabel: "Opciones: ",
+  options: [{}],
+  onChangeFn: () => {},
+};
+
+export { FilterSelect };

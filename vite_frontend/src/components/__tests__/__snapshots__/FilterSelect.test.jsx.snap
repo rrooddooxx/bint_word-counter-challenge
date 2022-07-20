@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FilterSelect> Pruebas Match con el snapshot pasándole array de props 1`] = `
+<div>
+  <div
+    class="input-group"
+  >
+    <label
+      class="input-group-text"
+      for="inputGroupSelect01"
+    >
+      Opciones: 
+    </label>
+    <select
+      aria-label="select-dropdown"
+      class="form-select"
+      id="inputGroupSelect01"
+    >
+      <option
+        value="0"
+      >
+        Seleccione...
+      </option>
+      <option
+        value="15"
+      >
+        Ver 15 Resultados
+      </option>
+      <option
+        value="30"
+      >
+        Ver 30 Resultados
+      </option>
+      <option
+        value="50"
+      >
+        Ver 50 Resultados
+      </option>
+    </select>
+  </div>
+</div>
+`;

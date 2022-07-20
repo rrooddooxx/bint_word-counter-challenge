@@ -1,6 +1,8 @@
+import { data as appData } from "./appData.js";
+
 export const fetchData = async (length = 0, limit = 50) => {
   try {
-    const apiUrl = "http://localhost:3000/api/v1/ranking";
+    const { apiUrl } = appData;
     const response = await fetch(`${apiUrl}?length=${length}&limit=${limit}`);
     const { data } = await response.json();
 

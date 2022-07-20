@@ -2,8 +2,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FilterSelect, Btn, data } from "./index.js";
+import PropTypes from "prop-types";
 
-export const Filters = ({
+const Filters = ({
   setResultsLimit,
   setWordLength,
   isLoading,
@@ -39,3 +40,11 @@ export const Filters = ({
     </>
   );
 };
+
+Filters.propTypes = {
+  setResultsLimit: PropTypes.func.isRequired,
+  setWordLength: PropTypes.func.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+};
+
+export { Filters };

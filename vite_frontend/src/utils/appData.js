@@ -13,4 +13,5 @@ export const data = {
     { name: "Inicio", href: "/" },
     { name: "API Docs", href: "#apidocs" },
   ],
+  apiUrl: "http://localhost:3000/api/v1/ranking",
 };

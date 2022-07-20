@@ -81,3 +81,5 @@
 {"level":"error","message":"text analysis (v1) service -> Error!","timestamp":"2022-07-13T17:18:00.623Z"}
 {"level":"error","message":"text analysis (v1) service -> Error!","timestamp":"2022-07-13T17:18:00.632Z"}
 {"level":"error","message":"text analysis (v1) service -> Error!","timestamp":"2022-07-13T17:18:00.646Z"}
+{"level":"error","message":"rank limiter service -> Error!","timestamp":"2022-07-20T02:55:33.175Z"}
+{"level":"error","message":"rank limiter service -> Error!","timestamp":"2022-07-20T02:56:41.631Z"}
