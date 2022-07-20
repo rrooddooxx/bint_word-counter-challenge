@@ -97,6 +97,7 @@ Se ha proporcionado un archivo _.env.example_ para la configuración de las vari
 ## 🧪 Testing (Front-End)
 
 Se ha incorporado una suite de tests con JEST para los componentes, helpers y hooks del frontend con React.
+
 _PD: Se están incorporando nuevos tests de forma incremental_
 
 Sobre el directorio raíz, ejecutar:
