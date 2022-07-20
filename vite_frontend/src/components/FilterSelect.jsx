@@ -26,16 +26,14 @@ const FilterSelect = ({ optLabel, options, onChangeFn }) => {
 };
 
 FilterSelect.propTypes = {
-  options: PropTypes.arrayOf(PropTypes.object),
+  options: PropTypes.arrayOf(PropTypes.object).isRequired,
+  onChangeFn: PropTypes.func.isRequired,
   name: PropTypes.string,
   val: PropTypes.number,
-  onChangeFn: PropTypes.func,
 };
 
 FilterSelect.defaultProps = {
   optLabel: "Opciones: ",
-  options: [{}],
-  onChangeFn: () => {},
 };
 
 export { FilterSelect };

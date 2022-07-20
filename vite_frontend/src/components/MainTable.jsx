@@ -3,7 +3,7 @@ import { TableRow, LoadingSpinner } from "./index.js";
 
 export const MainTable = ({ rowData, isLoading }) => {
   return (
-    <Table striped>
+    <Table striped style={{ marginBottom: "6rem" }}>
       <thead>
         <tr>
           <th># Posición</th>
