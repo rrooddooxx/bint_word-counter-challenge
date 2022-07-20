@@ -28,29 +28,28 @@ Stack utilizado:
 ./gradlew bootRun
 ```
 
-2. Clonar _este_ repositorio en un entorno local. Para instalar las dependencias de la API desarrollada en NodeJS, ejecutar:
+2. Clonar _este_ repositorio en un entorno local. Para instalar las dependencias de la API desarrollada en NodeJS, ejecutar en el directorio raíz:
 
 ```
 cd expressjs_api/
 npm install
 ```
 
-3. Para ejecutar la API en modo producción _(directorio "expressjs_api")_:
+3. Para ejecutar la API (Node.js) en modo producción _(directorio "expressjs_api")_:
 
 ```
 npm start
 ```
 
-4. Para ejecutar la API en modo desarrollo _(directorio "expressjs_api")_:
+4. Para ejecutar la API (Node.js) en modo desarrollo _(directorio "expressjs_api")_:
 
 ```
 npm run dev
 ```
 
-5. Para instalar las dependencias del entorno de desarrollo del front-end con React:
+5. Para instalar las dependencias del entorno de desarrollo del front-end con React, desde el directorio raíz:
 
 ```
-cd ..
 cd vite_frontend/
 yarn install
 ```
@@ -61,7 +60,7 @@ yarn install
 yarn dev
 ```
 
-7. Para generar un _build_ de producción del frontend con React:
+7. Para generar un _build_ de producción del frontend con React _(directorio "vite_frontend")_:
 
 ```
 yarn build
