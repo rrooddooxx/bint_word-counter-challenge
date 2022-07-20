@@ -6,8 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-expressjs_api/api.log
-expressjs_api/api-error.log
+
 
 node_modules
 dist
