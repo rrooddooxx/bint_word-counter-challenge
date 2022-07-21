@@ -30,4 +30,20 @@ describe("<FilterSelect> Pruebas", () => {
     fireEvent.change(selectNode, { target: { value: 11 } });
     expect(selectNode.value).toBe(options[0].val.toString());
   });
+
+  test("Llama a la función onChangeFn en el evento onChange, pasándole el valor del option seleccionado", () => {
+    const onChangeFn = jest.fn();
+    const optionsArr = [
+      { name: "dos", val: 2 },
+      { name: "tres", val: 3 },
+    ];
+
+    render(<FilterSelect options={optionsArr} onChangeFn={onChangeFn} />);
+    const dropdownElement = screen.getByLabelText("select-dropdown");
+    fireEvent.change(dropdownElement, { target: { value: 3 } });
+    fireEvent.change(dropdownElement, { target: { value: 2 } });
+
+    expect(onChangeFn).toHaveBeenCalledTimes(2);
+    expect(onChangeFn).toHaveBeenCalledWith(2);
+  });
 });
