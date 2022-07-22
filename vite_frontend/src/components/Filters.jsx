@@ -45,6 +45,7 @@ Filters.propTypes = {
   setResultsLimit: PropTypes.func.isRequired,
   setWordLength: PropTypes.func.isRequired,
   isLoading: PropTypes.bool.isRequired,
+  setReloadAction: PropTypes.func,
 };
 
 export { Filters };
