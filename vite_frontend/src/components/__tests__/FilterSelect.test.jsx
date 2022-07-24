@@ -2,7 +2,7 @@ import { data } from "../../utils/appData.js";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { FilterSelect } from "../FilterSelect.jsx";
 
-describe("<FilterSelect> Pruebas", () => {
+describe("[COMP] <FilterSelect>", () => {
   const options = data.limitResultsOptions;
   test("Match con el snapshot pasándole array de props", () => {
     const { container } = render(

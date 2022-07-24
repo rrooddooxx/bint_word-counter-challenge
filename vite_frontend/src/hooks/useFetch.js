@@ -8,13 +8,13 @@ export const useFetch = (wordLength = 0, resultsLimit = 10, reloadAction) => {
   const apiFetch = async (length, Limit) => {
     const response = await fetchData(length, Limit);
     setRowData(response);
+    setIsLoading(false);
   };
 
   useEffect(() => {
     // agrego 500ms de delay
     setTimeout(() => {
       apiFetch(wordLength, resultsLimit);
-      setIsLoading(false);
     }, 500);
 
     return () => {

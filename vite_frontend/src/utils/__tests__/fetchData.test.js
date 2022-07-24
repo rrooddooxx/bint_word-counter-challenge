@@ -4,7 +4,7 @@ describe("Pruebas en utils/fetchData", () => {
   test("Objeto de respuesta tiene la estructura esperada", async () => {
     const response = await fetchData();
     expect(response).toEqual({
-      id: expect.any(String),
+      id: expect.any(Number),
       title: expect.any(String),
       ranking: expect.any(Array),
     });

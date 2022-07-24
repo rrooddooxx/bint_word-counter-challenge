@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<FilterSelect> Pruebas Match con el snapshot pasándole array de props 1`] = `
+exports[`[COMP] <FilterSelect> Match con el snapshot pasándole array de props 1`] = `
 <div>
   <div
     class="input-group"

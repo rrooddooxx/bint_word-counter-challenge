@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { useFetch } from "../../hooks/useFetch.js";
 import { MainTable } from "../index.js";
 
-describe("<MainTable> Pruebas", () => {
+describe("[COMP] <MainTable>", () => {
   test("Muestra spinner al cargar los datos", () => {
     const data = {
       ranking: [],

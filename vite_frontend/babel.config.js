@@ -1,13 +1,7 @@
-const presets = [
-  [
-    "@babel/preset-env",
-    {
-      targets: {
-        esmodules: true,
-      },
-    },
+module.exports = {
+  presets: [
+    ["@babel/preset-env", { targets: { esmodules: true, node: "current" } }],
+    ["@babel/preset-react", { runtime: "automatic" }],
   ],
-  ["@babel/preset-react", { runtime: "automatic" }],
-];
-
-module.exports = { presets };
+  plugins: [["@babel/plugin-transform-modules-commonjs"]],
+};

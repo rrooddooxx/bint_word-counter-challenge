@@ -1,7 +1,7 @@
 const { render, screen } = require("@testing-library/react");
 import { TableRow } from "../TableRow.jsx";
 
-describe("<TableRow> tests", () => {
+describe("[COMP] <TableRow>", () => {
   const rowData = {
     ranking: [{ word: "hola", position: 12, occurrences: 20 }],
   };

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1658622789568" clover="3.2.0">
+  <project timestamp="1658622789568" name="All files">
+    <metrics statements="47" coveredstatements="41" conditionals="10" coveredconditionals="6" methods="21" coveredmethods="16" elements="78" coveredelements="63" complexity="0" loc="47" ncloc="47" packages="3" files="12" classes="12"/>
+    <package name="components">
+      <metrics statements="24" coveredstatements="20" conditionals="6" coveredconditionals="4" methods="14" coveredmethods="9"/>
+      <file name="Btn.jsx" path="/Users/sebastiankravetz/+ DEV/PRUEBA_BANCOINTERNACIONAL/word_count_app/vite_frontend/src/components/Btn.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+      <file name="FilterSelect.jsx" path="/Users/sebastiankravetz/+ DEV/PRUEBA_BANCOINTERNACIONAL/word_count_app/vite_frontend/src/components/FilterSelect.jsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="17" count="9" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="35" count="3" type="stmt"/>
+      </file>
+      <file name="Filters.jsx" path="/Users/sebastiankravetz/+ DEV/PRUEBA_BANCOINTERNACIONAL/word_count_app/vite_frontend/src/components/Filters.jsx">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+      </file>
+      <file name="Heading.jsx" path="/Users/sebastiankravetz/+ DEV/PRUEBA_BANCOINTERNACIONAL/word_count_app/vite_frontend/src/components/Heading.jsx">
+        <metrics statements="2" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="LoadingSpinner.jsx" path="/Users/sebastiankravetz/+ DEV/PRUEBA_BANCOINTERNACIONAL/word_count_app/vite_frontend/src/components/LoadingSpinner.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+      <file name="MainTable.jsx" path="/Users/sebastiankravetz/+ DEV/PRUEBA_BANCOINTERNACIONAL/word_count_app/vite_frontend/src/components/MainTable.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+      </file>
+      <file name="NavBarPrincipal.jsx" path="/Users/sebastiankravetz/+ DEV/PRUEBA_BANCOINTERNACIONAL/word_count_app/vite_frontend/src/components/NavBarPrincipal.jsx">
+        <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+      </file>
+      <file name="TableRow.jsx" path="/Users/sebastiankravetz/+ DEV/PRUEBA_BANCOINTERNACIONAL/word_count_app/vite_frontend/src/components/TableRow.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/sebastiankravetz/+ DEV/PRUEBA_BANCOINTERNACIONAL/word_count_app/vite_frontend/src/components/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="hooks">
+      <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="5"/>
+      <file name="useFetch.js" path="/Users/sebastiankravetz/+ DEV/PRUEBA_BANCOINTERNACIONAL/word_count_app/vite_frontend/src/hooks/useFetch.js">
+        <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="4" count="2" type="cond" truecount="0" falsecount="2"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="10" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="appData.js" path="/Users/sebastiankravetz/+ DEV/PRUEBA_BANCOINTERNACIONAL/word_count_app/vite_frontend/src/utils/appData.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="5" type="stmt"/>
+      </file>
+      <file name="fetchData.js" path="/Users/sebastiankravetz/+ DEV/PRUEBA_BANCOINTERNACIONAL/word_count_app/vite_frontend/src/utils/fetchData.js">
+        <metrics statements="9" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="3" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="13" count="74" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
