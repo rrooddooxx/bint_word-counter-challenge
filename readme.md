@@ -107,6 +107,13 @@ cd vite_frontend/
 yarn test
 ```
 
+Para obtener el reporte de test coverage:
+
+```
+cd vite_frontend/
+yarn test-coverage
+```
+
 Una vez dentro de la suite, para filtrar por algún componente en especial, puede pulsar la tecla [p] y filtrar por el nombre del componente.
 
 ## 📚 Documentación de la API:
