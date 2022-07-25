@@ -1,5 +1,11 @@
 import Container from "react-bootstrap/Container";
-import { MainTable, NavBarPrincipal, Heading, Filters } from "./components";
+import {
+  MainTable,
+  NavBarPrincipal,
+  Heading,
+  Filters,
+  appData,
+} from "./components";
 import { useFetch } from "./hooks/useFetch.js";
 import { useState } from "react";
 import "./assets/styles.css";
@@ -12,7 +18,7 @@ const App = () => {
   const [data, isLoading] = useFetch(wordLength, resultsLimit, reloadAction);
   return (
     <>
-      <NavBarPrincipal />
+      <NavBarPrincipal navBarSections={appData.navbarSections} />
       <Container>
         <Heading textTitle={data.title} id={data.id} />
         <Filters

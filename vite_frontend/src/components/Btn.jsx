@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/esm/Button.js";
 
-export const Btn = ({ isLoading, setReloadAction }) => {
+const Btn = ({ isLoading, setReloadAction }) => {
   return (
     <>
       {isLoading ? (
@@ -12,3 +12,5 @@ export const Btn = ({ isLoading, setReloadAction }) => {
     </>
   );
 };
+
+export { Btn };

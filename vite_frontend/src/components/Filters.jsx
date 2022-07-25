@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { FilterSelect, Btn, data } from "./index.js";
+import { FilterSelect, Btn, appData } from "./index.js";
 import PropTypes from "prop-types";
 
 const Filters = ({
@@ -24,14 +24,14 @@ const Filters = ({
           <Col>
             <FilterSelect
               optLabel={"Número de resultados: "}
-              options={data.limitResultsOptions}
+              options={appData.limitResultsOptions}
               onChangeFn={setResultsLimit}
             />
           </Col>
           <Col>
             <FilterSelect
               optLabel={"Densidad de palabra: "}
-              options={data.wordLengthOptions}
+              options={appData.wordLengthOptions}
               onChangeFn={setWordLength}
             />
           </Col>
@@ -46,6 +46,7 @@ Filters.propTypes = {
   setWordLength: PropTypes.func.isRequired,
   isLoading: PropTypes.bool.isRequired,
   setReloadAction: PropTypes.func,
+  appData: PropTypes.object,
 };
 
 export { Filters };

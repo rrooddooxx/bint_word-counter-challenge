@@ -1,4 +1,4 @@
-export const data = {
+export const appData = {
   limitResultsOptions: [
     { name: "Ver 15 Resultados", val: 15 },
     { name: "Ver 30 Resultados", val: 30 },

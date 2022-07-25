@@ -1,9 +1,9 @@
-import { data } from "../../utils/appData.js";
+import { appData } from "../../utils/appData.js";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { FilterSelect } from "../FilterSelect.jsx";
 
 describe("[COMP] <FilterSelect>", () => {
-  const options = data.limitResultsOptions;
+  const options = appData.limitResultsOptions;
   test("Match con el snapshot pasándole array de props", () => {
     const { container } = render(
       <FilterSelect options={options} onChangeFn={() => {}} />

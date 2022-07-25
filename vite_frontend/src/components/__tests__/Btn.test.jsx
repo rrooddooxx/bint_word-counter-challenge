@@ -1,3 +1,4 @@
+import React from "react";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { Btn } from "../index.js";
 
@@ -7,13 +8,14 @@ describe("[COMP] <Btn>", () => {
     expect(screen.getByRole("button").textContent).toBe("Cargando...");
   });
 
-  test("Debe de mostrar botón para ejecutar una recarga de datos si isLoading es false, y ejecutar la función setReloadAction 1 vez al hacer click", () => {
+  test("Debe mostrar 'Refrescar' si isLoading es false, para poder detonar una recarga. Debe ejecutar la función setReloadAction pasada por props 1 vez por click, la que debe retornar la negación del estado actual.", () => {
     //
-    const setReloadAction = jest.fn();
+    const setReloadAction = jest.fn(fn => fn(true));
     render(<Btn isLoading={false} setReloadAction={setReloadAction} />);
     const button = screen.getByRole("button");
     expect(button.textContent).toBe("Refrescar");
     fireEvent.click(button);
     expect(setReloadAction).toBeCalledTimes(1);
+    expect(setReloadAction).toReturnWith(false);
   });
 });

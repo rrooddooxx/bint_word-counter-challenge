@@ -1,9 +1,9 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { data } from "./index";
+import PropTypes from "prop-types";
 
-export const NavBarPrincipal = () => {
+const NavBarPrincipal = ({ navBarSections }) => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
@@ -11,8 +11,12 @@ export const NavBarPrincipal = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            {data.navbarSections.map(menuitem => (
-              <Nav.Link href={menuitem.href} key={menuitem.name}>
+            {navBarSections.map(menuitem => (
+              <Nav.Link
+                href={menuitem.href}
+                key={menuitem.name}
+                aria-label={"navitem"}
+              >
                 {menuitem.name}
               </Nav.Link>
             ))}
@@ -22,3 +26,9 @@ export const NavBarPrincipal = () => {
     </Navbar>
   );
 };
+
+NavBarPrincipal.propTypes = {
+  navBarSections: PropTypes.array.isRequired,
+};
+
+export { NavBarPrincipal };

@@ -10,6 +10,16 @@ describe("Pruebas en utils/fetchData", () => {
     });
   });
 
+  test("Devuelve los valores por defecto fijados en los parámetros de la función (límite de resultados: 20, densidad de palabra: 0)", async () => {
+    const response = await fetchData();
+    const wordLength = 1;
+    expect(response.ranking.length).toBe(20);
+    expect(response.ranking[0].word.length).toBeGreaterThanOrEqual(wordLength);
+    expect(response.ranking[1].word.length).toBeGreaterThanOrEqual(wordLength);
+    expect(response.ranking[2].word.length).toBeGreaterThanOrEqual(wordLength);
+    expect(response.ranking[3].word.length).toBeGreaterThanOrEqual(wordLength);
+  });
+
   test("Ranking de palabras devuelve un arreglo con el límite de resultados indicado", async () => {
     const arrLength = 10;
     const response = await fetchData(0, arrLength);
@@ -25,5 +35,13 @@ describe("Pruebas en utils/fetchData", () => {
     expect(responseThreeCharsMin.ranking[1].word.length).toBeGreaterThanOrEqual(
       3
     );
+  });
+
+  test("Try/Catch responde a errores de llamado", async () => {
+    try {
+      const response = await fetchData(-222, -222);
+    } catch (e) {
+      expect(e.message).toBe("Error en el fetch a la API");
+    }
   });
 });

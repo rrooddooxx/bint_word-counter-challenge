@@ -1,6 +1,6 @@
-import { data as appData } from "./appData.js";
+import { appData } from "./appData.js";
 
-export const fetchData = async (length = 0, limit = 50) => {
+export const fetchData = async (length = 0, limit = 20) => {
   try {
     const { apiUrl } = appData;
     const response = await fetch(`${apiUrl}?length=${length}&limit=${limit}`);
@@ -14,7 +14,6 @@ export const fetchData = async (length = 0, limit = 50) => {
       }),
     };
   } catch (error) {
-    console.error("Error en el fetch a la API");
-    return;
+    throw new Error("Error en el fetch a la API");
   }
 };

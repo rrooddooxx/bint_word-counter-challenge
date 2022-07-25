@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-export const Heading = ({ textTitle, id }) => {
+const Heading = ({ textTitle, id }) => {
   return (
     <div className={"my-3"}>
       <h1>Ranking de palabras más recurrentes</h1>
@@ -21,3 +22,10 @@ export const Heading = ({ textTitle, id }) => {
     </div>
   );
 };
+
+Heading.propTypes = {
+  textTitle: PropTypes.string.isRequired,
+  id: PropTypes.number,
+};
+
+export { Heading };
